@@ -30,8 +30,8 @@ public class Svg {
         var svg_serializer = new SvgSerializer {
             Width = this.Width,
             Height = this.Height,
-            Rects = this.Shapes.Where(x => x is Rectangular).Select(x => (Rectangle)x).ToList(),
-            Circles = this.Shapes.Where(x => x is Circular).Select(x => (Circle)x).ToList(),
+            Rects = this.Shapes.Where(x => x is Rectangle).Select(x => (Rectangle)x).ToList(),
+            Circles = this.Shapes.Where(x => x is Circle).Select(x => (Circle)x).ToList(),
             Texts = this.Shapes.Where(x => x is Text).Select(x => (Text)x).ToList(),
         };
 
