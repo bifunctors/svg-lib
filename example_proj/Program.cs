@@ -6,14 +6,16 @@ Console.WriteLine("Serializing SVG");
 
 var svg = new SvgLib.Svg();
 
-var a = new Rectangle();
-a.Size(10, 10);
-
 svg.Shapes.AddRange([
     new Rectangle()
         .Position(50, 50)
         .Size(100, 20)
-        .Background(BLACK)
+        .Background(BLACK),
+
+    new Line()
+        .Position(10, 10)
+        .Size(100, 10)
+        .Border(BLACK),
 ]);
 
 svg.Serialize("Resources/example.svg");
