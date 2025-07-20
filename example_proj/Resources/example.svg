@@ -1,5 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
-  <rect x="50" y="50" width="100" height="20" fill="" stroke="black" />
-  <line x1="10" y1="10" x2="100" y2="10" stroke="black" />
+<svg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="48" y="0" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="96" y="0" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="144" y="0" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="192" y="0" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="240" y="0" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="288" y="0" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="336" y="0" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="0" y="40" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="48" y="40" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="96" y="40" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="144" y="40" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="192" y="40" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="240" y="40" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="288" y="40" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="336" y="40" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="0" y="80" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="48" y="80" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="96" y="80" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="144" y="80" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="192" y="80" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="240" y="80" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="288" y="80" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="336" y="80" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="0" y="120" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="48" y="120" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="96" y="120" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="144" y="120" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="192" y="120" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="240" y="120" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="288" y="120" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="336" y="120" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="0" y="160" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="48" y="160" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="96" y="160" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="144" y="160" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="192" y="160" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="240" y="160" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="288" y="160" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="336" y="160" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="0" y="200" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="48" y="200" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="96" y="200" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="144" y="200" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="192" y="200" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="240" y="200" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="288" y="200" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="336" y="200" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="0" y="240" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="48" y="240" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="96" y="240" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="144" y="240" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="192" y="240" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="240" y="240" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="288" y="240" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="336" y="240" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="0" y="280" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="48" y="280" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="96" y="280" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="144" y="280" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="192" y="280" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="240" y="280" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <rect x="288" y="280" rx="0" ry="0" width="48" height="40" fill="black" stroke="black" />
+  <rect x="336" y="280" rx="0" ry="0" width="48" height="40" fill="white" stroke="black" />
+  <text x="0" y="6" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">A8</text>
+  <text x="48" y="6" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">B8</text>
+  <text x="96" y="6" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">C8</text>
+  <text x="144" y="6" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">D8</text>
+  <text x="192" y="6" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">E8</text>
+  <text x="240" y="6" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">F8</text>
+  <text x="288" y="6" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">G8</text>
+  <text x="336" y="6" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">H8</text>
+  <text x="0" y="46" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">A7</text>
+  <text x="48" y="46" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">B7</text>
+  <text x="96" y="46" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">C7</text>
+  <text x="144" y="46" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">D7</text>
+  <text x="192" y="46" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">E7</text>
+  <text x="240" y="46" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">F7</text>
+  <text x="288" y="46" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">G7</text>
+  <text x="336" y="46" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">H7</text>
+  <text x="0" y="86" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">A6</text>
+  <text x="48" y="86" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">B6</text>
+  <text x="96" y="86" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">C6</text>
+  <text x="144" y="86" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">D6</text>
+  <text x="192" y="86" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">E6</text>
+  <text x="240" y="86" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">F6</text>
+  <text x="288" y="86" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">G6</text>
+  <text x="336" y="86" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">H6</text>
+  <text x="0" y="126" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">A5</text>
+  <text x="48" y="126" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">B5</text>
+  <text x="96" y="126" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">C5</text>
+  <text x="144" y="126" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">D5</text>
+  <text x="192" y="126" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">E5</text>
+  <text x="240" y="126" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">F5</text>
+  <text x="288" y="126" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">G5</text>
+  <text x="336" y="126" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">H5</text>
+  <text x="0" y="166" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">A4</text>
+  <text x="48" y="166" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">B4</text>
+  <text x="96" y="166" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">C4</text>
+  <text x="144" y="166" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">D4</text>
+  <text x="192" y="166" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">E4</text>
+  <text x="240" y="166" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">F4</text>
+  <text x="288" y="166" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">G4</text>
+  <text x="336" y="166" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">H4</text>
+  <text x="0" y="206" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">A3</text>
+  <text x="48" y="206" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">B3</text>
+  <text x="96" y="206" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">C3</text>
+  <text x="144" y="206" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">D3</text>
+  <text x="192" y="206" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">E3</text>
+  <text x="240" y="206" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">F3</text>
+  <text x="288" y="206" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">G3</text>
+  <text x="336" y="206" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">H3</text>
+  <text x="0" y="246" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">A2</text>
+  <text x="48" y="246" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">B2</text>
+  <text x="96" y="246" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">C2</text>
+  <text x="144" y="246" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">D2</text>
+  <text x="192" y="246" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">E2</text>
+  <text x="240" y="246" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">F2</text>
+  <text x="288" y="246" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">G2</text>
+  <text x="336" y="246" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">H2</text>
+  <text x="0" y="286" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">A1</text>
+  <text x="48" y="286" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">B1</text>
+  <text x="96" y="286" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">C1</text>
+  <text x="144" y="286" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">D1</text>
+  <text x="192" y="286" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">E1</text>
+  <text x="240" y="286" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">F1</text>
+  <text x="288" y="286" font-family="JetBrains Mono" font-size="40" fill="white" dominant-baseline="hanging" text-anchor="start">G1</text>
+  <text x="336" y="286" font-family="JetBrains Mono" font-size="40" fill="black" dominant-baseline="hanging" text-anchor="start">H1</text>
 </svg>
