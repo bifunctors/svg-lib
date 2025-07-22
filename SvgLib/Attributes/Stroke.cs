@@ -1,10 +1,10 @@
 namespace SvgLib;
 
 public interface Stroke<T> where T : Stroke<T> {
-    public string Colour { get; set; }
+    public string StrokeColour { get; set; }
 
     public T Border(string colour) {
-        Colour = colour;
+        StrokeColour = colour;
         return (T)this;
     }
 }

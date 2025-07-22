@@ -1,10 +1,10 @@
 namespace SvgLib;
 
-public interface Colour<T> where T : Colour<T> {
-    public string Fill { get; set; }
+public interface Fill<T> where T : Fill<T> {
+    public string FillColour { get; set; }
 
-    public T Background(string colour) {
-        Fill = colour;
+    public T Colour(string colour) {
+        FillColour = colour;
         return (T)this;
     }
 }

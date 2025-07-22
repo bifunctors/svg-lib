@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="2000" height="500" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="0" rx="0" ry="0" width="2000" height="500" fill="none" stroke="black" />
-  <rect x="240" y="50" rx="0" ry="0" width="88" height="112" fill="darkorchid" stroke="none" />
-  <rect x="328" y="162" rx="0" ry="0" width="88" height="112" fill="dodgerblue" stroke="none" />
-  <rect x="416" y="274" rx="0" ry="0" width="88" height="112" fill="cyan" stroke="none" />
-  <rect x="504" y="386" rx="0" ry="0" width="88" height="112" fill="hotpink" stroke="none" />
-  <rect x="592" y="386" rx="0" ry="0" width="88" height="112" fill="hotpink" stroke="none" />
-  <rect x="680" y="386" rx="0" ry="0" width="88" height="112" fill="hotpink" stroke="none" />
-  <rect x="768" y="386" rx="0" ry="0" width="88" height="112" fill="hotpink" stroke="none" />
+  <rect x="240" y="50" rx="0" ry="0" width="88" height="112" fill="darkmagenta" stroke="none" />
+  <rect x="328" y="162" rx="0" ry="0" width="88" height="112" fill="cyan" stroke="none" />
+  <rect x="416" y="274" rx="0" ry="0" width="88" height="112" fill="hotpink" stroke="none" />
+  <rect x="504" y="386" rx="0" ry="0" width="88" height="112" fill="deeppink" stroke="none" />
+  <rect x="592" y="386" rx="0" ry="0" width="88" height="112" fill="deeppink" stroke="none" />
+  <rect x="680" y="386" rx="0" ry="0" width="88" height="112" fill="deeppink" stroke="none" />
+  <rect x="768" y="386" rx="0" ry="0" width="88" height="112" fill="deeppink" stroke="none" />
   <rect x="0" y="50" rx="0" ry="0" width="192" height="40" fill="none" stroke="none" />
   <rect x="0" y="162" rx="0" ry="0" width="192" height="40" fill="none" stroke="none" />
   <rect x="0" y="274" rx="0" ry="0" width="240" height="40" fill="none" stroke="none" />

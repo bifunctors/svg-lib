@@ -33,6 +33,7 @@ public class Svg {
             Rects = this.Shapes.Where(x => x is Rectangle).Select(x => (Rectangle)x).ToList(),
             Circles = this.Shapes.Where(x => x is Circle).Select(x => (Circle)x).ToList(),
             Texts = this.Shapes.Where(x => x is Text).Select(x => (Text)x).ToList(),
+            Lines = this.Shapes.Where(x => x is Line).Select(x => (Line)x).ToList(),
         };
 
         serializer.Serialize(stream, svg_serializer);
@@ -56,4 +57,7 @@ public class SvgSerializer {
 
     [XmlElement("text")]
     public required List<Text> Texts { get; set; } = new();
+
+    [XmlElement("line")]
+    public required List<Line> Lines { get; set; } = new();
 }
