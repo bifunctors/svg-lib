@@ -2,7 +2,7 @@ using System.Xml.Serialization;
 
 namespace SvgLib;
 
-public class Text : Shape, Transform<Text>, Fill<Text>, Font<Text> {
+public class Text : Shape, Layer, Transform<Text>, Fill<Text>, Font<Text> {
     [XmlAttribute("x")]
     public int X { get; set; }
     [XmlAttribute("y")]
@@ -25,6 +25,8 @@ public class Text : Shape, Transform<Text>, Fill<Text>, Font<Text> {
     [XmlText]
     public string String { get; set; } = "";
 
+    public int GroupingLayer { get; set; } = 0;
+
     public Text Position(int x, int y) {
         X = x;
         Y = y;
@@ -43,6 +45,11 @@ public class Text : Shape, Transform<Text>, Fill<Text>, Font<Text> {
 
     public Text Content(string content) {
         String = content;
+        return this;
+    }
+
+    public Text Layer(int num) {
+        GroupingLayer = num;
         return this;
     }
 }

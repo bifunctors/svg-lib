@@ -30,10 +30,26 @@ public class Svg {
         var svg_serializer = new SvgSerializer {
             Width = this.Width,
             Height = this.Height,
-            Rects = this.Shapes.Where(x => x is Rectangle).Select(x => (Rectangle)x).ToList(),
-            Circles = this.Shapes.Where(x => x is Circle).Select(x => (Circle)x).ToList(),
-            Texts = this.Shapes.Where(x => x is Text).Select(x => (Text)x).ToList(),
-            Lines = this.Shapes.Where(x => x is Line).Select(x => (Line)x).ToList(),
+            Rects = this.Shapes
+                .Where(x => x is Rectangle)
+                .Select(x => (Rectangle)x)
+                .OrderBy(x => x.GroupingLayer)
+                .ToList(),
+            Circles = this.Shapes
+                .Where(x => x is Circle)
+                .Select(x => (Circle)x)
+                .OrderBy(x => x.GroupingLayer)
+                .ToList(),
+            Texts = this.Shapes
+                .Where(x => x is Text)
+                .Select(x => (Text)x)
+                .OrderBy(x => x.GroupingLayer)
+                .ToList(),
+            Lines = this.Shapes
+                .Where(x => x is Line)
+                .Select(x => (Line)x)
+                .OrderBy(x => x.GroupingLayer)
+                .ToList(),
         };
 
         serializer.Serialize(stream, svg_serializer);
@@ -49,15 +65,15 @@ public class SvgSerializer {
     [XmlAttribute("height")]
     public required int Height { get; set; }
 
-    [XmlElement("rect")]
-    public required List<Rectangle> Rects { get; set; } = new();
-
     [XmlElement("circle")]
     public required List<Circle> Circles { get; set; } = new();
 
-    [XmlElement("text")]
-    public required List<Text> Texts { get; set; } = new();
-
     [XmlElement("line")]
     public required List<Line> Lines { get; set; } = new();
+
+    [XmlElement("rect")]
+    public required List<Rectangle> Rects { get; set; } = new();
+
+    [XmlElement("text")]
+    public required List<Text> Texts { get; set; } = new();
 }

@@ -2,7 +2,7 @@ using static SvgLib.SvgColour;
 
 namespace SvgLib;
 
-public class TextBox {
+public class TextBox : Layer {
     private readonly Rectangle rectangle;
     private readonly Text text;
     private readonly int x_padding = 0;
@@ -11,6 +11,8 @@ public class TextBox {
     private static int DEFAULT_WIDTH_PER_CHAR = 24;
     private static int DEFAULT_HEIGHT = 40;
     private static int DEFAULT_FONT_SIZE = 40;
+
+    public int GroupingLayer { get; set; } = 0;
 
     public TextBox(int x, int y, int width, int height, string content) {
         rectangle = new Rectangle()
@@ -55,6 +57,12 @@ public class TextBox {
 
     public TextBox Rounded(bool is_rounded) {
         rectangle.Rounded(is_rounded);
+        return this;
+    }
+
+    public TextBox Layer(int num) {
+        rectangle.Layer(num);
+        text.Layer(num);
         return this;
     }
 

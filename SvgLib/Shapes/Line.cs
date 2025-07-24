@@ -15,6 +15,8 @@ public class Line : Shape, Transform<Line>, Stroke<Line> {
     [XmlAttribute("stroke")]
     public string StrokeColour { get; set; } = String.Empty;
 
+    public int GroupingLayer { get; set; } = 0;
+
     public Line Position(int x, int y) {
         X = x;
         Y = y;
@@ -29,6 +31,11 @@ public class Line : Shape, Transform<Line>, Stroke<Line> {
 
     public Line Border(string colour) {
         StrokeColour = colour;
+        return this;
+    }
+
+    public Line Layer(int num) {
+        GroupingLayer = num;
         return this;
     }
 }

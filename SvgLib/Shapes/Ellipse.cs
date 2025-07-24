@@ -3,7 +3,7 @@ using System.Xml.Serialization;
 
 namespace SvgLib;
 
-public class Ellipse : Shape, Transform<Ellipse>, Fill<Ellipse>, Stroke<Ellipse> {
+public class Ellipse : Shape, Layer, Transform<Ellipse>, Fill<Ellipse>, Stroke<Ellipse> {
     [XmlAttribute("cx")]
     public int X { get; set; }
     [XmlAttribute("cy")]
@@ -19,6 +19,8 @@ public class Ellipse : Shape, Transform<Ellipse>, Fill<Ellipse>, Stroke<Ellipse>
 
     [XmlAttribute("stroke")]
     public string StrokeColour { get; set; } = String.Empty;
+
+    public int GroupingLayer { get; set; } = 0;
 
     public Ellipse Position(int x, int y) {
         X = x;
@@ -39,6 +41,11 @@ public class Ellipse : Shape, Transform<Ellipse>, Fill<Ellipse>, Stroke<Ellipse>
 
     public Ellipse Border(string colour) {
         StrokeColour = colour;
+        return this;
+    }
+
+    public Ellipse Layer(int num) {
+        GroupingLayer = num;
         return this;
     }
 }

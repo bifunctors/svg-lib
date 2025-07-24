@@ -2,7 +2,7 @@ using System.Xml.Serialization;
 
 namespace SvgLib;
 
-public class Rectangle : Shape, Transform<Rectangle>, Fill<Rectangle>, Stroke<Rectangle> {
+public class Rectangle : Shape, Layer, Transform<Rectangle>, Fill<Rectangle>, Stroke<Rectangle> {
     [XmlAttribute("x")]
     public int X { get; set; } = 0;
     [XmlAttribute("y")]
@@ -23,6 +23,8 @@ public class Rectangle : Shape, Transform<Rectangle>, Fill<Rectangle>, Stroke<Re
 
     [XmlAttribute("stroke")]
     public string StrokeColour { get; set; } = String.Empty;
+
+    public int GroupingLayer { get; set; } = 0;
 
     private static int DEFAULT_CORNER_RADII = 6;
 
@@ -58,6 +60,11 @@ public class Rectangle : Shape, Transform<Rectangle>, Fill<Rectangle>, Stroke<Re
     public Rectangle Rounded(int radius) {
         Rx = radius;
         Ry = radius;
+        return this;
+    }
+
+    public Rectangle Layer(int num) {
+        GroupingLayer = num;
         return this;
     }
 }
