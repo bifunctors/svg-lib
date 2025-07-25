@@ -4,7 +4,6 @@ namespace SvgLib;
 public record Task(string name, int start, int end);
 
 public class GanttChart {
-
     private static (int Width, int Height) CANVAS_SIZE = (2000, 500);
     private static int TIME_STEP = 1;
     private static int FONT_SIZE = 24;
@@ -37,8 +36,7 @@ public class GanttChart {
             .Border(NONE)
             .Layer(2)
             .Shapes()
-            .ToList()
-            .ForEach(svg.Shapes.Add);
+            .AddTo(svg.Shapes);
 
         // Horizontal Lines
         Enumerable.Range(0, num_rows + 1)
@@ -46,9 +44,7 @@ public class GanttChart {
                     .Position(0, chart_offset_y + row_height * x)
                     .Size(CANVAS_SIZE.Width, chart_offset_y + row_height * x)
                     .Border(GRAY))
-            .Cast<Shape>()
-            .ToList()
-            .ForEach(svg.Shapes.Add);
+            .AddTo(svg.Shapes);
 
         // Verical Lines
         Enumerable.Range(0, vertical_lines_step)
@@ -56,9 +52,7 @@ public class GanttChart {
                     .Position(task_label_width + col_width * x, time_label_height)
                     .Size(task_label_width + col_width * x, CANVAS_SIZE.Height + time_label_height)
                     .Border(GRAY))
-            .Cast<Shape>()
-            .ToList()
-            .ForEach(svg.Shapes.Add);
+            .AddTo(svg.Shapes);
 
         // Colour Squares
         Enumerable.Range(0, tasks.Length)
@@ -74,8 +68,7 @@ public class GanttChart {
                         .Background(SvgColour.RandomColour(y))
                         .Layer(4)
                         .Border(NONE)))
-            .ToList()
-            .ForEach(svg.Shapes.Add);
+            .AddTo(svg.Shapes);
 
 
         // Task Labels
@@ -86,7 +79,7 @@ public class GanttChart {
                     .Border(NONE))
             .Select(x => x.Shapes())
             .ToList()
-            .ForEach(svg.Shapes.AddRange);
+            .ForEach(x => x.AddTo(svg.Shapes));
 
         // Time Step Labels
         Enumerable.Range(0, num_cols)
@@ -105,7 +98,7 @@ public class GanttChart {
                     )
             .Select(x => x.Shapes())
             .ToList()
-            .ForEach(svg.Shapes.AddRange);
+            .ForEach(x => x.AddTo(svg.Shapes));
 
         return svg;
     }
