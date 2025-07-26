@@ -8,6 +8,6 @@ SvgLib.Task[] tasks = [
 
 var svg = GanttChart.Draw(tasks);
 
-svg.Serialize("Resources/example.svg");
+svg.Serialize(string.Empty);
 
 Console.WriteLine("Serialized");

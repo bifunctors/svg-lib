@@ -22,7 +22,7 @@ public class Svg {
     }
 
     public void Serialize(string path) {
-        if (path == String.Empty) path = "Resources/example.svg";
+        if (path == String.Empty) path = Path.Join(Environment.CurrentDirectory, "example.svg");
 
         var serializer = new XmlSerializer(typeof(SvgSerializer));
         using var stream = new FileStream(path, FileMode.Create);
