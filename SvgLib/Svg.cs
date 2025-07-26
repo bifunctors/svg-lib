@@ -30,30 +30,17 @@ public class Svg {
         var svg_serializer = new SvgSerializer {
             Width = this.Width,
             Height = this.Height,
-            Rects = this.Shapes
-                .Where(x => x is Rectangle)
-                .Select(x => (Rectangle)x)
-                .OrderBy(x => x.GroupingLayer)
-                .ToList(),
-            Circles = this.Shapes
-                .Where(x => x is Circle)
-                .Select(x => (Circle)x)
-                .OrderBy(x => x.GroupingLayer)
-                .ToList(),
-            Texts = this.Shapes
-                .Where(x => x is Text)
-                .Select(x => (Text)x)
-                .OrderBy(x => x.GroupingLayer)
-                .ToList(),
-            Lines = this.Shapes
-                .Where(x => x is Line)
-                .Select(x => (Line)x)
-                .OrderBy(x => x.GroupingLayer)
-                .ToList(),
+            Rects = OrderByLayer<Rectangle>(Shapes),
+            Circles = OrderByLayer<Circle>(Shapes),
+            Texts = OrderByLayer<Text>(Shapes),
+            Lines = OrderByLayer<Line>(Shapes)
         };
 
         serializer.Serialize(stream, svg_serializer);
     }
+
+    private static List<T> OrderByLayer<T>(List<Shape> list) where T : Shape, Layer =>
+        list.Where(x => x is T).Cast<T>().OrderBy(x => x.GroupingLayer).ToList();
 }
 
 [XmlRoot(ElementName = "svg",

@@ -2,7 +2,7 @@ using System.Xml.Serialization;
 
 namespace SvgLib;
 
-public class Line : Shape, Transform<Line>, Stroke<Line> {
+public class Line : Shape, Layer, Transform<Line>, Stroke<Line> {
     [XmlAttribute("x1")]
     public int X { get; set; }
     [XmlAttribute("y1")]
